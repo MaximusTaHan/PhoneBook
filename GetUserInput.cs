@@ -53,7 +53,8 @@ internal class GetUserInput
         bool found = false;
         var foundContact = new Contact();
 
-        Console.WriteLine("\nWhich Contact would you like to Update? (Or press 0 to return to Main Menu).");
+        //segment is very similar to ProcessUpdate could probably make a helper method
+        Console.WriteLine("\nWhich Contact would you like to Delete? (Or press 0 to return to Main Menu).");
         string input = Console.ReadLine();
         if (input == "0")
             MainMenu();
